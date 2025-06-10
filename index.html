@@ -26,8 +26,7 @@
     header {
       background: white;
       color: #212529;
-      padding: 2rem;
-      text-align: left;
+      padding: 1.5rem 2rem;
       display: flex;
       align-items: center;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -36,17 +35,27 @@
       height: 60px;
       margin-right: 1rem;
     }
+    header div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     header h1 {
-      font-size: 2.5rem;
-      margin: 0.5rem 0;
+      font-size: 2rem;
+      margin: 0;
+    }
+    header p {
+      margin: 0.25rem 0 0;
+      font-size: 1rem;
+      color: #555;
     }
     .hero {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      padding: 3rem 1rem;
-      background: #fff;
+      padding: 3rem 1rem 1rem;
+      background: transparent;
     }
     .hero img {
       max-width: 300px;
@@ -57,6 +66,9 @@
     .hero-text {
       max-width: 500px;
       margin: 1rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 1rem;
     }
     .hero-text h2 {
       font-size: 2rem;
@@ -65,6 +77,33 @@
     .hero-text p {
       font-size: 1.1rem;
       line-height: 1.6;
+    }
+    .rating {
+      margin: 1rem 0;
+      font-size: 1rem;
+      color: #444;
+    }
+    .stars {
+      color: #f1c40f;
+      font-size: 1.2rem;
+      margin-left: 0.5rem;
+    }
+    .quick-cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .quick-cta button {
+      background: #0d6efd;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .quick-cta button:hover {
+      background: #0b5ed7;
     }
     .benefits, .cta, .footer {
       padding: 3rem 1rem;
@@ -121,8 +160,13 @@
     <img src="Capa Traduzida.png" alt="Capa do Ebook Durma Melhor">
     <div class="hero-text">
       <h2>Baseado em Ciência. Testado por Milhares.</h2>
+      <div class="rating">Avaliações: <strong>78.216</strong> <span class="stars">★★★★★</span></div>
       <p>Descubra como as telas estão sabotando seu sono e o que você pode fazer para reverter isso com métodos naturais, práticos e cientificamente comprovados. Um passo a passo direto para transformar suas noites — e seus dias.</p>
     </div>
+  </section>
+
+  <section class="quick-cta">
+    <button onclick="window.location.href='https://seulinkdecheckout.com'">Quero Dormir Melhor Agora</button>
   </section>
 
   <section class="benefits">
@@ -138,9 +182,9 @@
   </section>
 
   <section class="cta">
-    <h3>Comece sua transformação agora</h3>
+    <h3>Transforme suas noites agora</h3>
     <p>Receba o eBook em seu e-mail e dê o primeiro passo rumo a noites tranquilas e restauradoras.</p>
-    <button onclick="window.location.href='https://seulinkdecompra.com'">Quero Dormir Melhor Agora</button>
+    <button onclick="window.location.href='https://seulinkdecheckout.com'">Quero Dormir Melhor Agora</button>
   </section>
 
   <section class="footer">
