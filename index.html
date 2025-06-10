@@ -93,11 +93,7 @@
       font-size: 1.2rem;
       margin-left: 0.5rem;
     }
-    .quick-cta {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .quick-cta button {
+    .cta-button {
       background: #0d6efd;
       color: white;
       border: none;
@@ -107,15 +103,17 @@
       cursor: pointer;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       animation: pulse 2s infinite;
+      margin: 2rem auto 0;
+      display: block;
     }
-    .quick-cta button:hover {
+    .cta-button:hover {
       background: #0b5ed7;
     }
-    .benefits, .cta, .footer, .reviews {
+    .benefits, .reviews, .footer {
       padding: 3rem 1rem;
       text-align: center;
     }
-    .benefits h3, .cta h3, .reviews h3 {
+    .benefits h3, .reviews h3 {
       font-size: 1.8rem;
       margin-bottom: 1rem;
     }
@@ -131,9 +129,6 @@
       border-radius: 1rem;
       padding: 1.5rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    }
-    .cta button {
-      display: none;
     }
     .review-list {
       max-width: 900px;
@@ -167,6 +162,12 @@
     }
 
     @media (max-width: 768px) {
+      .cta-desktop {
+        display: none;
+      }
+      .cta-mobile {
+        display: block;
+      }
       header {
         flex-direction: column;
         text-align: center;
@@ -181,10 +182,6 @@
       .hero img {
         width: 80%;
         margin-bottom: 1rem;
-      }
-      .quick-cta {
-        order: 3;
-        margin-top: 1rem;
       }
       .hero-text {
         padding: 1.5rem;
@@ -205,6 +202,12 @@
         text-align: center;
       }
     }
+
+    @media (min-width: 769px) {
+      .cta-mobile {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -218,14 +221,13 @@
 
   <section class="hero">
     <img src="Capa Traduzida.png" alt="Capa do Ebook Durma Melhor">
-    <div class="quick-cta">
-      <button onclick="window.location.href='https://seulinkdecheckout.com'">Quero Dormir Melhor Agora</button>
-    </div>
+    <button class="cta-button cta-mobile" onclick="window.location.href='https://seulinkdecheckout.com'">Quero Dormir Melhor Agora</button>
     <div class="hero-text">
       <h2>Baseado em Ciência. Testado por Milhares.</h2>
       <div class="rating">Avaliações: <strong>78.216</strong> <span class="stars">★★★★★</span></div>
       <p>Descubra como as telas estão sabotando seu sono e o que você pode fazer para reverter isso com métodos naturais, práticos e cientificamente comprovados. Um passo a passo direto para transformar suas noites — e seus dias.</p>
     </div>
+    <button class="cta-button cta-desktop" onclick="window.location.href='https://seulinkdecheckout.com'">Quero Dormir Melhor Agora</button>
   </section>
 
   <section class="benefits">
