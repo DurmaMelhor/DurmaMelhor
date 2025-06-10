@@ -55,7 +55,6 @@
       justify-content: center;
       align-items: center;
       padding: 3rem 1rem 1rem;
-      background: transparent;
     }
     .hero img {
       max-width: 300px;
@@ -158,6 +157,42 @@
     .review-name {
       font-weight: bold;
       margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header img {
+        margin: 0 0 1rem 0;
+      }
+      .hero {
+        flex-direction: column;
+        padding: 2rem 1rem;
+      }
+      .hero img {
+        width: 80%;
+        margin-bottom: 1rem;
+      }
+      .hero-text {
+        padding: 1.5rem;
+        max-width: 90%;
+      }
+      .benefit-list {
+        grid-template-columns: 1fr;
+      }
+      .review-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+      .review-item img {
+        margin: 0 0 1rem 0;
+      }
+      .review-content {
+        text-align: center;
+      }
     }
   </style>
 </head>
